@@ -1,1 +1,1 @@
-# Personal Website of Luca Baltensperger
+# Luca Baltensperger
