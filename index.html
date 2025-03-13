@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Luca Baltensperger</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -12,21 +12,52 @@
             background-color: white;
             text-align: center;
             margin: 50px;
-            max-width: 800px;
-            margin: auto;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             font-weight: 600;
         }
         p {
             font-size: 1.2em;
             font-weight: 300;
+            max-width: 600px;
+            margin: auto;
+        }
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 400;
+            color: black;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s;
+        }
+        nav a:hover {
+            border-bottom: 2px solid black;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
         }
     </style>
 </head>
 <body>
     <h1>Luca Baltensperger</h1>
-    <p>This is a simple personal website hosted on GitHub Pages.</p>
+    <img src="profile.jpg" alt="Your Photo">
+    <p>Short text about you. A scientist, a lawyer, a thinker. Interested in law, economics, and making sense of the world.</p>
+
+    <nav>
+        <a href="index.html">about</a>
+        <a href="cv.html">cv</a>
+        <a href="research.html">research</a>
+        <a href="teaching.html">teaching</a>
+        <a href="legaladvice.html">legal advice</a>
+        <a href="speakingrowing.html">speaking about rowing</a>
+    </nav>
 </body>
 </html>
