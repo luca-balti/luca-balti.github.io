@@ -9,56 +9,77 @@
         body {
             font-family: 'Inter', sans-serif;
             color: black;
-            background-color: white;
+            background-color: #ffffff;
             text-align: center;
-            margin: 50px;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
+
         h1 {
             font-size: 3em;
             font-weight: 600;
+            margin-bottom: 10px;
         }
-        p {
-            font-size: 1.2em;
-            font-weight: 300;
-            max-width: 600px;
-            margin: auto;
-        }
+
         nav {
-            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
         }
+
         nav a {
-            margin: 0 15px;
             text-decoration: none;
             font-weight: 400;
             color: black;
             font-size: 1.1em;
             border-bottom: 2px solid transparent;
             transition: border-bottom 0.3s;
+            padding: 5px;
         }
+
         nav a:hover {
             border-bottom: 2px solid black;
         }
+
         img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            display: block;
             margin: 20px auto;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+
+        p {
+            font-size: 1.2em;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 10px auto;
+            line-height: 1.5;
         }
     </style>
 </head>
 <body>
+
+    <h1>Luca Baltensperger</h1>
+
     <nav>
-        <a href="index.html">about</a>
-        <a href="cv.html">cv</a>
-        <a href="research.html">research</a>
-        <a href="teaching.html">teaching</a>
-        <a href="legaladvice.html">legal advice</a>
-        <a href="speakingrowing.html">speaking about rowing</a>
+        <a href="index.html">About</a>
+        <a href="cv.html">CV</a>
+        <a href="research.html">Research</a>
+        <a href="legaladvice.html">Legal Advice</a>
     </nav>
     
-    <h1>Luca Baltensperger</h1>
     <img src="profile2.jpg" alt="Your Photo">
-    <p>Short text about you. A scientist, a lawyer, a thinker. Interested in law, economics, and making sense of the world.</p>
+
+    <p>A scientist, a lawyer, a thinker. Interested in law, economics, and making sense of the world.</p>
 
 </body>
 </html>
