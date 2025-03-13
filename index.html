@@ -10,27 +10,27 @@
             font-family: 'Inter', sans-serif;
             color: black;
             background-color: #ffffff;
-            text-align: center;
-            margin: 0;
+            margin: 40px;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
         }
 
         h1 {
             font-size: 3em;
             font-weight: 600;
-            margin-bottom: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Aligns everything to the left */
         }
 
         nav {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            margin-bottom: 20px;
+            margin-top: 5px;
         }
 
         nav a {
@@ -40,7 +40,8 @@
             font-size: 1.1em;
             border-bottom: 2px solid transparent;
             transition: border-bottom 0.3s;
-            padding: 5px;
+            margin-right: 15px;
+            display: inline-block;
         }
 
         nav a:hover {
@@ -51,35 +52,37 @@
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            display: block;
-            margin: 20px auto;
             object-fit: cover;
             border: 2px solid black;
+            margin-top: 20px;
         }
 
         p {
             font-size: 1.2em;
             font-weight: 300;
             max-width: 600px;
-            margin: 10px auto;
             line-height: 1.5;
         }
     </style>
 </head>
 <body>
 
-    <h1>Luca Baltensperger</h1>
+    <div class="container">
+        <h1>Luca Baltensperger</h1>
 
-    <nav>
-        <a href="index.html">About</a>
-        <a href="cv.html">CV</a>
-        <a href="research.html">Research</a>
-        <a href="legaladvice.html">Legal Advice</a>
-    </nav>
-    
-    <img src="profile2.jpg" alt="Your Photo">
+        <nav>
+            <a href="index.html">About</a>
+            <a href="cv.html">CV</a>
+            <a href="research.html">Research</a>
+            <a href="teaching.html">Teaching</a>
+            <a href="legaladvice.html">Legal Advice</a>
+            <a href="speakingrowing.html">Speaking & Rowing</a>
+        </nav>
 
-    <p>A scientist, a lawyer, a thinker. Interested in law, economics, and making sense of the world.</p>
+        <img src="profile2.jpg" alt="Your Photo">
+
+        <p>A scientist, a lawyer, a thinker. Interested in law, economics, and making sense of the world.</p>
+    </div>
 
 </body>
 </html>
