@@ -48,14 +48,40 @@
             border-bottom: 2px solid black;
         }
 
+        .content {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
         img {
             width: auto;
             height: 300px;
             border-radius: 0;
             object-fit: cover;
             border: 2px solid black;
-            margin-top: 20px;
+            margin-right: 20px;
         }
+
+        .resume {
+            max-width: 400px;
+        }
+
+        details, summary {
+        font-size: 1em; /* Match the font size of the text below */
+        font-weight: 300;
+        line-height: 1.2; /* Adjust the line height to reduce spacing */
+
+        }
+
+        details p {
+        margin: 1px; /* Reduce the margin between titles and lists */
+        }
+
+        details ul {
+        margin: 1px; /* Reduce the margin between titles and lists */
+         }
+
 
         p {
             font-size: 1em;
@@ -75,15 +101,40 @@
             <a href="cv.html">cv</a>
             <a href="research.html">research</a>
             <a href="legaladvice.html">legal advice</a>
-            
         </nav>
 
-        <img src="profil2.jpg" alt="Your Photo">
+        <div class="content">
+            <img src="profil2.jpg" alt="Your Photo">
+            <div class="resume">
+                <details open>
+                    <summary><b>TLDR/resumé</b> </summary>
+                    <p><b>experience</b></p>
+                    <ul>
+                        <li>graduate researcher @ <a href="https://lawecon.ethz.ch/">CLE ETH Zurich</a></li>
+                        <li>visiting researcher @ <a href="https://www.law.columbia.edu/">Columbia Law School</a></li>
+                        <li>bar admission </li>
+                        <li>junior associate @ <a href="https://www.homburger.ch/en">Homburger</a></li>
+                    </ul>
+                    <p><b>education</b></p>
+                    <ul>
+                        <li>PhD LawEcon @ <a href="https://lawecon.ethz.ch/">ETH Zurich</a>(exp. 08/25)</li>
+                        <li>LLM tech/public policy@ <a href="https://www.law.berkeley.edu/">UC Berkeley</a></li>
+                        <li>MLaw and BLaw @ <a href="https://www.ius.uzh.ch/en.html">University of Zurich</a></li>
+                    </ul>
+                    <p><b>community</b></p>
+                    <ul>
+                        <li>free legal aid </li>
+                        <li>grenadier @ <a href="https://www.vtg.admin.ch/en/special-forces-command">Swiss armed forces</a></li>
+                        <li>athlete @ <a href="https://www.srf.ch/play/tv/sendung/rudern-am-limit?id=c82c1f74-2f6f-4e78-af79-b362f008fc91">SwissMocean</a></li>
+                    </ul>
+                </details>
+            </div>
+        </div>
 
         <p>
             I’m interested in the law; both normatively (ethically evaluating human behavior) and empirically (explaining and predicting human behavior).
             I enjoy thinking about conflicting interests and searching for their (legal) solutions.
-            In my research, I apply methods from psychology, economics, and data science to legal questions in privacy, AI regulation, and antidiscrimination.
+            In my research, I use methods from psychology, economics, and data science to answer legal questions on privacy, AI, discrimination, and coercion.
             In my practice, I provide (free) legal advice in civil and criminal cases.
         </p>
     </div>
