@@ -68,26 +68,54 @@
         }
 
         details, summary {
-        font-size: 1em; /* Match the font size of the text below */
-        font-weight: 300;
-        line-height: 1.2; /* Adjust the line height to reduce spacing */
-
+            font-size: 1em; /* Match the font size of the text below */
+            font-weight: 300;
+            line-height: 1.2; /* Adjust the line height to reduce spacing */
         }
 
         details p {
-        margin: 1px; /* Reduce the margin between titles and lists */
+            margin: 1px; /* Reduce the margin between titles and lists */
         }
 
         details ul {
-        margin: 1px; /* Reduce the margin between titles and lists */
-         }
-
+            margin: 1px; /* Reduce the margin between titles and lists */
+        }
 
         p {
             font-size: 1em;
             font-weight: 300;
             max-width: 600px;
             line-height: 1.5;
+        }
+        
+        /* Mobile styles */
+        @media screen and (max-width: 600px) {
+            body {
+                margin: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2em;
+            }
+            
+            .content {
+                flex-direction: column;
+            }
+            
+            img {
+                margin-right: 0;
+                margin-bottom: 20px;
+                height: auto;
+                max-width: 100%;
+            }
+            
+            .resume {
+                max-width: 100%;
+            }
+            
+            p {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -132,7 +160,7 @@
         </div>
 
         <p>
-            I’m interested in the law; both normatively (ethically evaluating human behavior) and empirically (explaining and predicting human behavior).
+            I'm interested in the law; both normatively (ethically evaluating human behavior) and empirically (explaining and predicting human behavior).
             I enjoy thinking about conflicting interests and searching for their (legal) solutions.
             In my research, I use methods from psychology, economics, and data science to answer legal questions on privacy, AI, discrimination, and coercion.
             In my practice, I provide (free) legal advice in civil and criminal cases.
