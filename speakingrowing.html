@@ -61,13 +61,21 @@
      margin-bottom: 5px;
     }
     .image-container {
-      width: 600px; /* Same width as text paragraphs */
+      width: 600px; /* Keep the desktop width as original */
       margin-top: 10px;
     }
     .image-container img {
       width: 100%;
       height: auto;
       display: block;
+    }
+    
+    /* Media query only for the image on mobile screens */
+    @media screen and (max-width: 768px) {
+      .image-container {
+        width: 100%; /* Make the container responsive on mobile */
+        max-width: 600px; /* Don't exceed original size */
+      }
     }
   </style>
 </head>
